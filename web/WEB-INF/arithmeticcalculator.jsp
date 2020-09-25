@@ -15,16 +15,16 @@
 <h1>Arithmetic Calculator</h1>
 <form action="ArithmeticCalculatorServlet" method="post">
     <label for="first">First: </label>
-    <input type="text" id="first">
+    <input type="text" id="first" name="first">
     <br>
     <label for="second">Second: </label>
-    <input type="text" id="second">
+    <input type="text" id="second" name="second">
     <br>
-    <input type="submit" value="+">
-    <input type="submit" value="-">
-    <input type="submit" value="*">
-    <input type="submit" value="%">
-    <p>Result: </p>
+    <input type="submit" value="+" name="action">
+    <input type="submit" value="-" name="action">
+    <input type="submit" value="*" name="action">
+    <input type="submit" value="%" name="action">
+    <p>Result: ${result}</p>
     <a href="AgeCalculatorServlet">Age Calculator</a>
 </form>
 </body>
